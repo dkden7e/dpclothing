@@ -1,19 +1,19 @@
 Config = {
-	Language = "en",					-- You can change the language here. I translated some with a tool online so they might not be 100% accurate. Let me know!
+	Language = "es",					-- You can change the language here. I translated some with a tool online so they might not be 100% accurate. Let me know!
 	ExtrasEnabled = true,				-- This toggles the extra commands (Shirt, Pants) in case you dont want your players stripping their clothes for whatever reason.
 	Debug = false,						-- Enables logging and on screen display of what your character is wearing.
 	GUI = {
-		Position = {x = 0.65, y = 0.5},	-- 0.5 is the middle!
-		AllowInCars = false,			-- Allow the GUI in cars?
+		Position = {x = 0.75, y = 0.5},		-- 0.5 is the middle!
+		AllowInCars = true,					-- Allow the GUI in cars?
 		AllowWhenRagdolled = false,			-- Allow the GUI when ragdolled?
-		Enabled = true, 				-- You can turn the gui off here, the base commands will still work.
-		Key = GetKey("Y"), 				-- Change the GUI key here.
-		Sound = true,					-- You can disable sound in the GUI here.
+		Enabled = true, 					-- You can turn the gui off here, the base commands will still work.
+		Key = GetKey("K"), 					-- Change the GUI key here.
+		Sound = true,						-- You can disable sound in the GUI here.
 		TextColor = {255,255,255},
 		TextOutline = true,
-		TextFont = 0,					-- Change font, useful for other languages.
-		TextSize = 0.21,				-- Change the text size below buttons here, useful for other languages.
-		Toggle = false,					-- Change the keybind from toggling the window open, or just holding it to open it.
+		TextFont = 0,			--0			-- Change font, useful for other languages.
+		TextSize = 0.45,		--0.21		-- Change the text size below buttons here, useful for other languages.
+		Toggle = false,						-- Change the keybind from toggling the window open, or just holding it to open it.
 	}
 }
 
@@ -146,10 +146,25 @@ Config.Commands = {
 }
 
 local Bags = {				-- This is where bags/parachutes that should have the bag sprite, instead of the parachute sprite.
+							-- [] = true,
 	[40] = true,
 	[41] = true,
 	[44] = true,
-	[45] = true
+	[45] = true,
+	[81] = true,
+	[82] = true,
+	[85] = true,
+	[86] = true,
+	[126] = true,
+	[127] = true,
+	[128] = true,
+	[129] = true,
+	[130] = true,
+	[131] = true,
+	[132] = true,
+	[133] = true,
+	[139] = true,
+	[141] = true
 }
 
 Config.ExtraCommands = {

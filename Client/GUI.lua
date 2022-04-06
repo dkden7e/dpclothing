@@ -1,3 +1,5 @@
+local QueServer = GetConvar("server_number", "1")
+
 if not Config.GUI.Enabled then return end
 
 local Sounds = { -- In case you wanna change out the sounds they are located here.
@@ -46,10 +48,20 @@ end
 local function DrawButton(b)
 	local B = Config.GUI.ButtonColor
 	local Rot = b.Rotate or 0.0
-	if b.Shadow then
-		DrawSprite("dp_clothing", "circle", b.x, b.y, b.Size.Circle.x/0.80, b.Size.Circle.y/0.80, Rot, b.Colour.r, b.Colour.g, b.Colour.b, b.Alpha)
+	if QueServer == "TENCITY" then
+		if b.Shadow then
+			DrawSprite("dp_tcclothing", "circle", b.x, b.y, b.Size.Circle.x/0.70, b.Size.Circle.y/0.70, Rot, b.Colour.r, b.Colour.g, b.Colour.b, b.Alpha)
+			-- DrawSprite("dp_clothing", "circle", b.x, b.y, b.Size.Circle.x/0.80, b.Size.Circle.y/0.80, Rot, b.Colour.r, b.Colour.g, b.Colour.b, b.Alpha)
+		end
+		DrawSprite("dp_tcclothing", b.Sprite, b.x, b.y, b.Size.Sprite.x/0.85, b.Size.Sprite.y/0.85, b.Rotation, 255, 255, 255, b.Alpha)
+	else
+		if b.Shadow then
+			DrawSprite("dp_clothing", "circle", b.x, b.y, b.Size.Circle.x/0.70, b.Size.Circle.y/0.70, Rot, b.Colour.r, b.Colour.g, b.Colour.b, b.Alpha)
+			-- DrawSprite("dp_clothing", "circle", b.x, b.y, b.Size.Circle.x/0.80, b.Size.Circle.y/0.80, Rot, b.Colour.r, b.Colour.g, b.Colour.b, b.Alpha)
+		end
+		DrawSprite("dp_clothing", b.Sprite, b.x, b.y, b.Size.Sprite.x/0.85, b.Size.Sprite.y/0.85, b.Rotation, 255, 255, 255, b.Alpha)
 	end
-	DrawSprite("dp_clothing", b.Sprite, b.x, b.y, b.Size.Sprite.x/0.68, b.Size.Sprite.y/0.68, b.Rotation, 255, 255, 255, b.Alpha)
+	-- DrawSprite("dp_clothing", b.Sprite, b.x, b.y, b.Size.Sprite.x/0.68, b.Size.Sprite.y/0.68, b.Rotation, 255, 255, 255, b.Alpha)
 	if IsDisabledControlJustPressed(1, 24) then
 		local x,y = GetCursor()
 		local Distance = Distance(b.x+0.005, b.y+0.025, x, y)
@@ -189,11 +201,14 @@ local function DrawGUI()
 	for k,v in pairs(Buttons) do
 		local Colour local Alpha
 		if LastEquipped[FirstUpper(v.Sprite)] then
-			Alpha = 180 Colour = {r=0,g=100,b=210,a=220}
+			Alpha = 235 Colour = {r=60,g=155,b=10,a=255}
+			--Alpha = 180 Colour = {r=0,g=100,b=210,a=220}
 		else 
-			Alpha = 255 Colour = {r=0,g=0,b=0,a=255}
+			Alpha = 255 Colour = {r=28,g=28,b=28,a=255}
+			--Alpha = 255 Colour = {r=0,g=0,b=0,a=255}
 		end
 		DrawSprite("dp_wheel", k.."", x, y, 0.4285, 0.7714, 0.0, Colour.r, Colour.g, Colour.b, Colour.a)
+		-- DrawSprite("dp_wheel", k.."", x, y, 0.4285, 0.7714, 0.0, Colour.r, Colour.g, Colour.b, Colour.a)
 		local Button = DrawButton({	-- Lets draw the buttons!
 			Alpha = Alpha,
 			Colour = Colour,
@@ -221,9 +236,11 @@ local function DrawGUI()
 		if v.Enabled then
 			local Colour local Alpha
 			if LastEquipped[FirstUpper(v.Sprite)] then
-				Alpha = 180 Colour = {r=0,g=100,b=210,a=220}
+				Alpha = 235 Colour = {r=60,g=155,b=10,a=255}
+				-- Alpha = 180 Colour = {r=0,g=100,b=210,a=220}
 			else 
-				Alpha = 255 Colour = {r=0,g=0,b=0,a=255}
+				Alpha = 255 Colour = {r=28,g=28,b=28,a=255}
+				--Alpha = 255 Colour = {r=0,g=0,b=0,a=255}
 			end
 			local sprite = v.Sprite
 			if v.SpriteFunc then
@@ -255,9 +272,11 @@ local function DrawGUI()
 	if Cooldown then Text(x, y+0.05, 0.28, Lang("PleaseWait"), false, false, true) end 		-- Cooldown indicator, if theres a cooldown we display a little text.
 	local InfoButton = DrawButton({
 		Alpha = 255,
-		Colour = {r=0,g=0,b=0},
+		Colour = {r=28,g=28,b=28},
+		--Colour = {r=0,g=0,b=0},
 		Shadow = true,
-		Size = {Circle = {x = 0.0345, y = 0.06}, Sprite = {x = 0.0234, y = 0.0425}},
+		Size = {Circle = {x = 0.0290, y = 0.048}, Sprite = {x = 0.0230, y = 0.0420}}, 
+		--Size = {Circle = {x = 0.0345, y = 0.06}, Sprite = {x = 0.0234, y = 0.0425}}, 
 		Sprite = "info",
 		Text = Lang("Info"),
 		x = x, y = y,
@@ -270,7 +289,14 @@ local function DrawGUI()
 	end
 end
 
-local TextureDicts = {"dp_clothing", "dp_wheel"}
+TextureDicts = {} 
+
+if QueServer == "TENCITY" then
+	TextureDicts = {"dp_tcclothing", "dp_wheel"}
+else
+	TextureDicts = {"dp_clothing", "dp_wheel"}
+end
+
 Citizen.CreateThread(function()
 	for k,v in pairs(TextureDicts) do while not HasStreamedTextureDictLoaded(v) do Wait(100) RequestStreamedTextureDict(v, true) end end
 	GenerateTheButtons()
@@ -296,3 +322,4 @@ Citizen.CreateThread(function()
 		if Config.Debug then DrawDev() end
 	end
 end)
+

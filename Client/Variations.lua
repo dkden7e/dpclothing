@@ -51,6 +51,15 @@ Citizen.CreateThread(function()
 	AddNewVariation("Visor", "Male", 125, 126)
 	AddNewVariation("Visor", "Male", 127, 128)
 	AddNewVariation("Visor", "Male", 130, 131)
+		--Agregados:
+	AddNewVariation("Visor", "Male", 135, 136)
+	AddNewVariation("Visor", "Male", 137, 138)
+	AddNewVariation("Visor", "Male", 139, 140)
+	AddNewVariation("Visor", "Male", 142, 143)
+	AddNewVariation("Visor", "Male", 147, 148)
+	AddNewVariation("Visor", "Male", 151, 152)
+	AddNewVariation("Visor", "Male", 153, 160)
+	AddNewVariation("Visor", "Male", 178, 179)
 	-- Female Visor/Hat Variations
 	AddNewVariation("Visor", "Female", 43, 44)
 	AddNewVariation("Visor", "Female", 49, 67)
@@ -77,12 +86,28 @@ Citizen.CreateThread(function()
 	AddNewVariation("Visor", "Female", 124, 125)
 	AddNewVariation("Visor", "Female", 126, 127)
 	AddNewVariation("Visor", "Female", 129, 130)
+	   	--Agregados:
+	AddNewVariation("Visor", "Female", 129, 130)
+	AddNewVariation("Visor", "Female", 134, 135)
+	AddNewVariation("Visor", "Female", 136, 137)
+	AddNewVariation("Visor", "Female", 138, 139)
+	AddNewVariation("Visor", "Female", 141, 142)
+	AddNewVariation("Visor", "Female", 146, 147)
+	AddNewVariation("Visor", "Female", 150, 151)
+	AddNewVariation("Visor", "Female", 157, 173)
+	AddNewVariation("Visor", "Female", 178, 179)
 	-- Male Bags
 	AddNewVariation("Bags", "Male", 45, 44)
 	AddNewVariation("Bags", "Male", 41, 40)
+		--Agregados:
+	AddNewVariation("Bags", "Male", 81, 82)	
+	AddNewVariation("Bags", "Male", 85, 86)	
 	-- Female Bags
 	AddNewVariation("Bags", "Female", 45, 44)
 	AddNewVariation("Bags", "Female", 41, 40)
+		--Agregados:
+	AddNewVariation("Bags", "Male", 81, 82)	
+	AddNewVariation("Bags", "Male", 85, 86)	
 	-- Male Hair
 	AddNewVariation("Hair", "Male", 7, 15, true)
 	AddNewVariation("Hair", "Male", 43, 15, true)
@@ -101,6 +126,31 @@ Citizen.CreateThread(function()
 	AddNewVariation("Hair", "Male", 53, 43, true)
 	AddNewVariation("Hair", "Male", 56, 43, true)
 	AddNewVariation("Hair", "Male", 58, 43, true)
+		--Agregados:
+	AddNewVariation("Hair", "Male", 75, 109, true)
+	AddNewVariation("Hair", "Male", 109, 75, true)
+	AddNewVariation("Hair", "Male", 76, 118, true)
+	AddNewVariation("Hair", "Male", 118, 76, true)
+	AddNewVariation("Hair", "Male", 78, 85, true)
+	AddNewVariation("Hair", "Male", 79, 87, true)
+	AddNewVariation("Hair", "Male", 85, 86, true)
+	AddNewVariation("Hair", "Male", 97, 98, true)
+	AddNewVariation("Hair", "Male", 98, 97, true)	
+	AddNewVariation("Hair", "Male", 88, 103, true)
+	AddNewVariation("Hair", "Male", 103, 107, true)
+	AddNewVariation("Hair", "Male", 104, 107, true)
+	AddNewVariation("Hair", "Male", 112, 79, true)
+	AddNewVariation("Hair", "Male", 116, 119, true)
+	AddNewVariation("Hair", "Male", 86, 85, true)
+	AddNewVariation("Hair", "Male", 119, 120, true)
+	AddNewVariation("Hair", "Male", 67, 68, true)
+	AddNewVariation("Hair", "Male", 68, 67, true)
+	AddNewVariation("Hair", "Male", 54, 55, true)
+	AddNewVariation("Hair", "Male", 55, 54, true)
+	AddNewVariation("Hair", "Male", 47, 46, true)
+	AddNewVariation("Hair", "Male", 46, 47, true)
+	AddNewVariation("Hair", "Male", 111, 105, true)
+	AddNewVariation("Hair", "Male", 105, 111, true)
 	-- Female Hair
 	AddNewVariation("Hair", "Female", 1, 49, true)
 	AddNewVariation("Hair", "Female", 2, 49, true)
@@ -126,18 +176,31 @@ Citizen.CreateThread(function()
 	AddNewVariation("Hair", "Female", 59, 54, true)
 	AddNewVariation("Hair", "Female", 68, 53, true)
 	AddNewVariation("Hair", "Female", 76, 48, true)
+		--Agregados:
+	AddNewVariation("Hair", "Female", 86, 128, true)
+	AddNewVariation("Hair", "Female", 94, 95, false)
+	AddNewVariation("Hair", "Female", 97, 99, true)
+	AddNewVariation("Hair", "Female", 98, 100, false)
+	AddNewVariation("Hair", "Female", 101, 138, false)
+	AddNewVariation("Hair", "Female", 103, 108, false)
+	AddNewVariation("Hair", "Female", 111, 147, false)
+	AddNewVariation("Hair", "Female", 128, 153, false)
+	AddNewVariation("Hair", "Female", 145, 146, false)
 	-- Male Top/Jacket Variations
 	AddNewVariation("Jackets", "Male", 29, 30)
 	AddNewVariation("Jackets", "Male", 31, 32)
 	AddNewVariation("Jackets", "Male", 42, 43)
+	AddNewVariation("Jackets", "Male", 59, 60)
 	AddNewVariation("Jackets", "Male", 68, 69)
 	AddNewVariation("Jackets", "Male", 74, 75)
 	AddNewVariation("Jackets", "Male", 87, 88)
+	AddNewVariation("Jackets", "Male", 93, 94)
 	AddNewVariation("Jackets", "Male", 99, 100)
 	AddNewVariation("Jackets", "Male", 101, 102)
 	AddNewVariation("Jackets", "Male", 103, 104)
 	AddNewVariation("Jackets", "Male", 126, 127)
 	AddNewVariation("Jackets", "Male", 129, 130)
+	AddNewVariation("Jackets", "Male", 131, 132)	
 	AddNewVariation("Jackets", "Male", 184, 185)
 	AddNewVariation("Jackets", "Male", 188, 189)
 	AddNewVariation("Jackets", "Male", 194, 195)
@@ -146,23 +209,63 @@ Citizen.CreateThread(function()
 	AddNewVariation("Jackets", "Male", 200, 203)
 	AddNewVariation("Jackets", "Male", 202, 205)
 	AddNewVariation("Jackets", "Male", 206, 207)
+	AddNewVariation("Jackets", "Male", 209, 212)
 	AddNewVariation("Jackets", "Male", 210, 211)
 	AddNewVariation("Jackets", "Male", 217, 218)
 	AddNewVariation("Jackets", "Male", 229, 230)
 	AddNewVariation("Jackets", "Male", 232, 233)
+	AddNewVariation("Jackets", "Male", 235, 236)
+	AddNewVariation("Jackets", "Male", 241, 242)
 	AddNewVariation("Jackets", "Male", 251, 253)
 	AddNewVariation("Jackets", "Male", 256, 261)
 	AddNewVariation("Jackets", "Male", 262, 263)
 	AddNewVariation("Jackets", "Male", 265, 266)
 	AddNewVariation("Jackets", "Male", 267, 268)
 	AddNewVariation("Jackets", "Male", 279, 280)
+	AddNewVariation("Jackets", "Male", 292, 293)
+	AddNewVariation("Jackets", "Male", 294, 295)
+	AddNewVariation("Jackets", "Male", 296, 297)
+	AddNewVariation("Jackets", "Male", 300, 303)
+	AddNewVariation("Jackets", "Male", 301, 302)
+	AddNewVariation("Jackets", "Male", 305, 306)
+	AddNewVariation("Jackets", "Male", 311, 312)
+	AddNewVariation("Jackets", "Male", 300, 303)
+	AddNewVariation("Jackets", "Male", 301, 302)
+	AddNewVariation("Jackets", "Male", 305, 306)
+	AddNewVariation("Jackets", "Male", 311, 312)
+	AddNewVariation("Jackets", "Male", 314, 315)
+	AddNewVariation("Jackets", "Male", 316, 317)
+	AddNewVariation("Jackets", "Male", 318, 319)
+	AddNewVariation("Jackets", "Male", 321, 322)
+	AddNewVariation("Jackets", "Male", 330, 331)
+	AddNewVariation("Jackets", "Male", 336, 337)
+	AddNewVariation("Jackets", "Male", 339, 126)
+	AddNewVariation("Jackets", "Male", 340, 341)
+	AddNewVariation("Jackets", "Male", 343, 344)
+	AddNewVariation("Jackets", "Male", 346, 234)
+	AddNewVariation("Jackets", "Male", 347, 260)
+	AddNewVariation("Jackets", "Male", 348, 349)
+	AddNewVariation("Jackets", "Male", 352, 353)
+	AddNewVariation("Jackets", "Male", 354, 355)
+	AddNewVariation("Jackets", "Male", 359, 360)
+	-- EUP:
+    AddNewVariation("Jackets", "Male", 377, 424)
+    AddNewVariation("Jackets", "Male", 386, 424)
+    AddNewVariation("Jackets", "Male", 387, 390)
+    AddNewVariation("Jackets", "Male", 401, 417)
+    AddNewVariation("Jackets", "Male", 433, 434)
+    AddNewVariation("Jackets", "Male", 437, 438)
 	-- Female Top/Jacket Variations
 	AddNewVariation("Jackets", "Female", 53, 52) 
 	AddNewVariation("Jackets", "Female", 57, 58) 
-	AddNewVariation("Jackets", "Female", 62, 63) 
+	AddNewVariation("Jackets", "Female", 62, 63)
+	AddNewVariation("Jackets", "Female", 84, 85) 
 	AddNewVariation("Jackets", "Female", 90, 91) 
 	AddNewVariation("Jackets", "Female", 92, 93) 
-	AddNewVariation("Jackets", "Female", 94, 95) 
+	AddNewVariation("Jackets", "Female", 94, 95)
+	AddNewVariation("Jackets", "Female", 117, 118)
+	AddNewVariation("Jackets", "Female", 120, 121)
+	AddNewVariation("Jackets", "Female", 128, 129)	
 	AddNewVariation("Jackets", "Female", 187, 186)
 	AddNewVariation("Jackets", "Female", 190, 191) 
 	AddNewVariation("Jackets", "Female", 196, 197) 
@@ -171,16 +274,48 @@ Citizen.CreateThread(function()
 	AddNewVariation("Jackets", "Female", 202, 205) 
 	AddNewVariation("Jackets", "Female", 204, 207) 
 	AddNewVariation("Jackets", "Female", 210, 211)
+	AddNewVariation("Jackets", "Female", 213, 216)
 	AddNewVariation("Jackets", "Female", 214, 215)
+	AddNewVariation("Jackets", "Female", 225, 226)
 	AddNewVariation("Jackets", "Female", 227, 228) 
 	AddNewVariation("Jackets", "Female", 239, 240) 
-	AddNewVariation("Jackets", "Female", 242, 243) 
+	AddNewVariation("Jackets", "Female", 242, 243)
+	AddNewVariation("Jackets", "Female", 244, 364)
+	AddNewVariation("Jackets", "Female", 245, 246)
+	AddNewVariation("Jackets", "Female", 249, 250)	 
 	AddNewVariation("Jackets", "Female", 259, 261)
 	AddNewVariation("Jackets", "Female", 265, 270) 
 	AddNewVariation("Jackets", "Female", 271, 272) 
 	AddNewVariation("Jackets", "Female", 274, 275) 
 	AddNewVariation("Jackets", "Female", 276, 277)
-	AddNewVariation("Jackets", "Female", 292, 293) 
+	AddNewVariation("Jackets", "Female", 280, 281)
+   	AddNewVariation("Jackets", "Female", 292, 293)
+	AddNewVariation("Jackets", "Female", 305, 306)
+	AddNewVariation("Jackets", "Female", 307, 308) 
+	AddNewVariation("Jackets", "Female", 311, 314) 
+	AddNewVariation("Jackets", "Female", 312, 313)
+	AddNewVariation("Jackets", "Female", 316, 317)
+	AddNewVariation("Jackets", "Female", 325, 326) 
+	AddNewVariation("Jackets", "Female", 327, 328) 
+	AddNewVariation("Jackets", "Female", 329, 330) 
+	AddNewVariation("Jackets", "Female", 332, 333)
+	AddNewVariation("Jackets", "Female", 339, 340) 
+	AddNewVariation("Jackets", "Female", 345, 346) 
+	AddNewVariation("Jackets", "Female", 351, 352) 
+	AddNewVariation("Jackets", "Female", 354, 121)
+	AddNewVariation("Jackets", "Female", 355, 356)
+	AddNewVariation("Jackets", "Female", 357, 359)
+	AddNewVariation("Jackets", "Female", 358, 360)
+	AddNewVariation("Jackets", "Female", 362, 363) 
+	AddNewVariation("Jackets", "Female", 366, 367) 
+	AddNewVariation("Jackets", "Female", 365, 269)
+	AddNewVariation("Jackets", "Female", 370, 371) 
+	AddNewVariation("Jackets", "Female", 372, 373)
+	AddNewVariation("Jackets", "Female", 378, 379) 
+	-- EUP:
+    AddNewVariation("Jackets", "Female", 394, 440)
+    AddNewVariation("Jackets", "Female", 383, 405)
+    AddNewVariation("Jackets", "Female", 401, 438)
 end)
 
 -- And this is the master table, i put it down here since it has all the glove variations, and thats quite the eyesore.
@@ -343,6 +478,31 @@ Variations = {
 			[165] = 4,
 			[166] = 4,
 			[167] = 4,
+			[168] = 4,
+			[170] = 15,
+			[171] = 0,
+			[172] = 1,
+			[173] = 2,
+			[174] = 4,
+			[175] = 5,
+			[176] = 6,
+			[177] = 8,
+			[178] = 11,
+			[179] = 12,
+			[180] = 14,
+			[181] = 112,
+			[182] = 113,
+			[183] = 114,
+			[185] = 184,
+			[186] = 184,
+			[187] = 184,
+			[188] = 184,
+			[189] = 185,
+			[190] = 184,
+			[191] = 184,
+			[192] = 184,
+			[193] = 184,
+			[194] = 184,
 		},
 		Female = {
 			[16] = 11,
@@ -532,6 +692,35 @@ Variations = {
 			[206] = 3,
 			[207] = 3,
 			[208] = 3,
+			[209] = 3,
+			[211] = 15,
+			[212] = 0,
+			[213] = 1,
+			[214] = 2,
+			[215] = 3,
+			[216] = 4,
+			[217] = 5,
+			[218] = 6,
+			[219] = 7,
+			[220] = 9,
+			[221] = 11,
+			[222] = 12,
+			[223] = 14,
+			[224] = 129,
+			[225] = 130,
+			[226] = 131,
+			[227] = 153,
+			[228] = 161,
+			[230] = 229,
+			[231] = 229,
+			[232] = 229,
+			[233] = 229,
+			[234] = 229,
+			[235] = 229,
+			[236] = 229,
+			[237] = 229,
+			[238] = 229,
+			[239] = 229,
 		}
 	}
 }

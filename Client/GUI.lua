@@ -291,11 +291,13 @@ end
 
 TextureDicts = {} 
 
-if QueServer == "TENCITY" then
-	TextureDicts = {"dp_tcclothing", "dp_wheel"}
+if QueServer == "MANCOSES" then
+	TextureDicts = {"dp_clothing", "dp_wheel"} 
 else
-	TextureDicts = {"dp_clothing", "dp_wheel"}
+	TextureDicts = {"dp_tcclothing", "dp_wheel"}
 end
+
+print(GetConvar("server_number", "1"))
 
 Citizen.CreateThread(function()
 	for k,v in pairs(TextureDicts) do while not HasStreamedTextureDictLoaded(v) do Wait(100) RequestStreamedTextureDict(v, true) end end
